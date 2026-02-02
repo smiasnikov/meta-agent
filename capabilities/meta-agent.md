@@ -26,6 +26,7 @@ Fields:
 | MA.CAP.04 | Design evidence scheme and validation workflow | FPF-only | Capabilities | Evidence scheme | Capabilities list | Evidence schema | TBD | TBD | TBD | provisional |
 | MA.CAP.05 | Define KB and dataset schemas (domain-agnostic) | FPF-only | Capabilities | Schema | Capabilities list | Schema created | TBD | TBD | TBD | provisional |
 | MA.CAP.06 | Map domain sources into FPF slots | Structure-only | Sources list | Mappings | Sources list | Mappings created | TBD | TBD | TBD | provisional |
+| MA.CAP.07 | Perform evidence audit of applied capabilities | FPF-only | Capability table + evidence records + sources | Audit report | Evidence records exist | Pass/fail + gaps recorded | TBD | TBD | TBD | provisional |
 
 ## Roadmap (future formalization)
 - **Level 2**: add RoleAssignment (A.2.1) and MethodDescription refs (A.3.2).

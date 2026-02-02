@@ -20,3 +20,5 @@
 ## Process
 - Work in small steps, show file content before writing.
 - Maintain linkage: Hypothesis → Experiment → Evidence → Capability.
+- Evidence audit (A.10/B.3) is a standard step in experiments; can be smoke-level or full.
+- Capability status upgrades require evidence audit pass (at least smoke-level).

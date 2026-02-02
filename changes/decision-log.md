@@ -32,3 +32,9 @@ Decision: Move applied course materials under strategator/sources/ and separate 
 Rationale: Keep Sources as carriers and Evidence as claims with traceability (A.10).
 Evidence/Refs: Human-in-the-loop feedback (this session).
 Status: accepted
+
+2026-02-01
+Decision: Evidence audit is a standard experiment step; capability status upgrades require at least smoke-level audit.
+Rationale: Enforce A.10/B.3 traceability and align capability status with evidence quality.
+Evidence/Refs: Human-in-the-loop feedback (this session).
+Status: accepted
