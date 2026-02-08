@@ -110,3 +110,15 @@ Lightweight variant (CC-DRR.5): for non-semantic edits (typos, wording), Problem
 **Consequences**: Strategator now structurally isomorphic to meta-agent. 10 MethodDescriptions created (method/01..10). Capabilities table rebuilt with 11-field A.2.2 schema. Evidence renamed ST.EV-001..004. Decision log with ST.DRR-001..002 created. CLAUDE.md operational rules added. Ready for EXP-002 capability testing. Affected: all files in ../strategator/.
 **Evidence/Refs**: Structural audit 2026-02-08; FPF patterns A.2.2, A.3.2, A.7, A.10; meta-agent as reference pattern.
 **Status**: accepted
+
+---
+
+## DRR-009
+
+**Date**: 2026-02-08
+**Problem frame**: Attempting to test Strategator capabilities revealed that test design requires knowing the agent's real constraints: what model, what context size, what storage, how sources are loaded. Without an Interface Specification, tests either over-test (using meta-agent LLM with full knowledge) or under-test (ignoring context limitations). Additionally, the agent has an evolution trajectory (reactive → proactive → multi-practice → multi-agent) that affects architecture.
+**Decision**: Adopt interface-first approach for applied agent testing. Before running capability tests, define Interface Specification (A.6 Signature) covering: layered knowledge context, model & budget, storage contract, session flow, and evolution roadmap. This becomes a standard step in the meta-agent workflow for applied agent creation (between structural validation and capability testing).
+**Rationale**: A.6 Signature Stack requires explicit interface definition. A.7 Strict Distinction — the tester must not be the testee (meta-agent testing its own output as if it were the applied agent violates role separation). B.4 Canonical Evolution Loop — evolution stages must be explicit to prevent scope creep. P-7 Pragmatic Utility — interface spec unblocks both test design and implementation simultaneously. P-3 Cross-Scale Consistency — this pattern applies to all future applied agents, not just Strategator.
+**Consequences**: New step added to applied agent workflow: after structural validation (DRR-008 pattern), create Interface Specification before testing. Strategator interface-spec.md created with layered context architecture and evolution roadmap L0-L4. Testing approach clarified: tests must specify executor model and context constraints. Method/01-agentic-workflow.md should be updated to include this step. Affected: method/01-agentic-workflow.md (pending update), applied agent creation workflow.
+**Evidence/Refs**: Strategator test attempt 2026-02-08 (role confusion identified); token count analysis; FPF patterns A.6, A.7, B.4.
+**Status**: accepted
