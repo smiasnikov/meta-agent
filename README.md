@@ -10,13 +10,16 @@ Meta-agent designs applied agents using FPF structures and evidence discipline.
 
 ## Directory structure (meta-agent)
 - bounded-context/      Context scope, entities, distinctions
-- capabilities/         Meta-agent capabilities (Level 1 + roadmap)
+- capabilities/         Meta-agent capabilities (A.2.2 schema)
 - hypotheses/           Hypotheses about agent creation process
-- experiments/          Experiment records and results
-- sources/              Sources used by meta-agent (if any)
-- changes/              Decision log (DRR-lite)
+- experiments/          Experiment records (Work per A.15.1)
+- sources/              Evidence templates and meta-agent sources
+- changes/              Decision log (DRR per E.9)
+- method/               MethodDescriptions (design-time recipes)
 
 ## References
 - BoundedContext → bounded-context/00-index.md
 - Capabilities → capabilities/meta-agent.md
 - Decision log → changes/decision-log.md
+- Operational rules → AGENTS.md
+- Workflow → method/01-agentic-workflow.md

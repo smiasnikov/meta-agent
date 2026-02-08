@@ -5,6 +5,7 @@
 
 ## Core FPF rules
 - Enforce A.7: Object ≠ Description ≠ Carrier; Role ≠ Work; MethodDescription ≠ Work.
+- Enforce A.2.2: Capability ≠ Method. Capability is a dispositional property of a System, not a recipe.
 - Every claim that affects capabilities must have Evidence (A.10).
 - Evidence must be stored as separate records with F-G-R + decay (B.3/B.3.4).
 
@@ -13,8 +14,10 @@
 - Applied content lives in applied agent folders or in meta-agent experiments/hypotheses as test data only.
 - Applied agent naming requires explicit human approval (HumanApprover).
 
-## Change control (E.9 DRR)
-- Decision log is a DRR-lite (E.9) and must be updated on any structural change.
+## Change control (DRR per E.9)
+- Decision log follows canonical DRR format (E.9:4): Problem frame, Decision, Rationale, Consequences.
+- Decision log must be updated on any structural change.
+- Lightweight variant (CC-DRR.5) permitted for non-semantic edits.
 - Capabilities remain provisional until evidence-backed.
 
 ## Process
@@ -22,3 +25,4 @@
 - Maintain linkage: Hypothesis → Experiment → Evidence → Capability.
 - Evidence audit (A.10/B.3) is a standard step in experiments; can be smoke-level or full.
 - Capability status upgrades require evidence audit pass (at least smoke-level).
+- Evidence naming must include context prefix (MA.EV-NNN for meta-agent, ST.EV-NNN for Strategator, etc.).
